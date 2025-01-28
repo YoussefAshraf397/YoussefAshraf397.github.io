@@ -132,6 +132,26 @@
         .contact-form button:hover {
             background: #0056b3;
         }
+
+        .blog-post {
+            margin-bottom: 20px;
+        }
+
+        .blog-post h3 a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .blog-post h3 a:hover {
+            color: #0056b3;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
     </style>
 </head>
 <body>
@@ -175,6 +195,55 @@
         </ul>
     </div>
 </section>
+
+<section id="blog" class="container">
+    <div class="card">
+        <h2>Blog Posts</h2>
+        <div id="blog-posts">
+            <!-- Blog posts will be dynamically loaded here -->
+        </div>
+    </div>
+</section>
+
+<script>
+    async function fetchRSS() {
+        const rssURL = 'http://debakarr.github.io/index.xml'; // Replace with your actual RSS feed URL
+        const response = await fetch(rssURL);
+        const text = await response.text();
+
+        // Parse the RSS feed
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(text, "text/xml");
+
+        // Extract items
+        const items = xml.querySelectorAll("item");
+        const blogPostsContainer = document.getElementById("blog-posts");
+
+        items.forEach(item => {
+            const title = item.querySelector("title").textContent;
+            const link = item.querySelector("link").textContent;
+            const description = item.querySelector("description").textContent;
+            const pubDate = item.querySelector("pubDate").textContent;
+            const author = item.querySelector("author").textContent;
+
+            // Create HTML structure for each post
+            const postHTML = `
+                <div class="blog-post">
+                    <h3><a href="${link}" target="_blank">${title}</a></h3>
+                    <p><strong>Author:</strong> ${author}</p>
+                    <p><strong>Published:</strong> ${new Date(pubDate).toDateString()}</p>
+                    <p>${description}</p>
+                </div>
+                <hr>
+            `;
+            blogPostsContainer.innerHTML += postHTML;
+        });
+    }
+
+    // Call the function to load RSS feed
+    fetchRSS();
+</script>
+
 
 <section id="contact" class="container">
     <div class="card">
