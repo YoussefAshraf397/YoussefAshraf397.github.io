@@ -1,38 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youssef Ashraf Awad</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img src="avatar.jpg" alt="Avatar" class="avatar">
-        <h1 class="animated-name">Youssef Ashraf Awad</h1>
-        <button id="theme-toggle">Toggle Theme</button>
+        <div class="hero">
+            <img src="joe-pp.jpeg" alt="Youssef Ashraf" class="avatar">
+            <div class="intro">
+                <h1 class="animated-name">Hi, I'm <span class="highlight">Youssef Ashraf Awad</span></h1>
+                <p>Software Engineer | Problem Solver | Tech Enthusiast</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>Explore my website to learn more about me, my projects, and my blog posts.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Science graduate with over 4 years of professional experience in software engineering. My expertise includes Laravel, Nuxt, Golang, Docker, and databases like PostgreSQL and SQL. I specialize in building scalable applications, optimizing performance, and solving complex problems.
+            </p>
+            <p>
+                I am passionate about creating innovative solutions that drive efficiency and deliver exceptional user experiences. My goal is to stay ahead of emerging technologies and continuously improve my skills.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>E-learning Platform</h3>
+                    <p>Developed a robust platform that improved accessibility and flexibility for learners, leading to a 40% increase in enrollment and a 50% reduction in course dropouts.</p>
+                </div>
+                <div class="project">
+                    <h3>Canteen Service</h3>
+                    <p>Implemented personalized recommendations and streamlined cart management, boosting sales and enhancing customer satisfaction.</p>
+                </div>
+                <div class="project">
+                    <h3>Live Session Service</h3>
+                    <p>Built a service using Golang, RabbitMQ, Redis, and Zoom API for seamless live session management, recordings, and automation.</p>
+                </div>
+                <div class="project">
+                    <h3>Payment Gateway</h3>
+                    <p>Integrated multi-payment methods with strategy and factory design patterns, enhancing the flexibility of online transactions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Coming soon! I’ll share insights, tutorials, and updates about software development, project management, and emerging technologies.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:youssefashraf397@yahoo.com">youssefashraf397@yahoo.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/youssef-ashraf-93b20a15b" target="_blank">Youssef Ashraf</a></p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Youssef Ashraf Awad</p>
+        <p>&copy; 2025 Youssef Ashraf Awad. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
+
 </html>
