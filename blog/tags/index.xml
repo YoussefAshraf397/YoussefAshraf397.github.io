@@ -1,30 +1,30 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Youssef Ashraf</title>
-        <link>http://localhost:1313/tags/</link>
+        <link>https://youssefashraf397.github.io/blog/tags/</link>
         <description>Tags - Tag - Youssef Ashraf</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jan 2025 01:41:41 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jan 2025 01:41:41 &#43;0200</lastBuildDate><atom:link href="https://youssefashraf397.github.io/blog/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Containerization</title>
-    <link>http://localhost:1313/tags/containerization/</link>
+    <link>https://youssefashraf397.github.io/blog/tags/containerization/</link>
     <pubDate>Wed, 29 Jan 2025 01:41:41 &#43;0200</pubDate>
     <author>Author</author>
-    <guid>http://localhost:1313/tags/containerization/</guid>
+    <guid>https://youssefashraf397.github.io/blog/tags/containerization/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>DevOps</title>
-    <link>http://localhost:1313/tags/devops/</link>
+    <link>https://youssefashraf397.github.io/blog/tags/devops/</link>
     <pubDate>Wed, 29 Jan 2025 01:41:41 &#43;0200</pubDate>
     <author>Author</author>
-    <guid>http://localhost:1313/tags/devops/</guid>
+    <guid>https://youssefashraf397.github.io/blog/tags/devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Docker</title>
-    <link>http://localhost:1313/tags/docker/</link>
+    <link>https://youssefashraf397.github.io/blog/tags/docker/</link>
     <pubDate>Wed, 29 Jan 2025 01:41:41 &#43;0200</pubDate>
     <author>Author</author>
-    <guid>http://localhost:1313/tags/docker/</guid>
+    <guid>https://youssefashraf397.github.io/blog/tags/docker/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
