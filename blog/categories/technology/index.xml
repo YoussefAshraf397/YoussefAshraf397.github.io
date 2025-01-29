@@ -1,0 +1,50 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Technology - Category - Youssef Ashraf</title>
+        <link>http://localhost:1313/categories/technology/</link>
+        <description>Technology - Category - Youssef Ashraf</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jan 2025 01:41:41 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/categories/technology/" rel="self" type="application/rss+xml" /><item>
+    <title>Introduction to Docker</title>
+    <link>http://localhost:1313/posts/first_post/</link>
+    <pubDate>Wed, 29 Jan 2025 01:41:41 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>http://localhost:1313/posts/first_post/</guid>
+    <description><![CDATA[<h2 id="what-is-docker">What is Docker?</h2>
+<p>Docker is an open-source platform that enables developers to build, deploy, and manage containerized applications. Containers allow applications to run in isolated environments, ensuring consistency across different systems.</p>
+<h2 id="why-use-docker">Why Use Docker?</h2>
+<ul>
+<li><strong>Portability:</strong> Run applications consistently across various environments.</li>
+<li><strong>Efficiency:</strong> Uses fewer resources than traditional virtual machines.</li>
+<li><strong>Scalability:</strong> Easily scale applications with Docker Compose and Kubernetes.</li>
+<li><strong>Fast Deployment:</strong> Quick and reproducible application deployment.</li>
+</ul>
+<h2 id="getting-started-with-docker">Getting Started with Docker</h2>
+<ol>
+<li><strong>Install Docker:</strong> Download and install Docker from <a href="https://www.docker.com/" target="_blank" rel="noopener noreffer ">Docker&rsquo;s official website</a>.</li>
+<li><strong>Verify Installation:</strong> Run:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker --version
+</span></span></code></pre></div></li>
+<li><strong>Run a Container:</strong> Execute:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker run hello-world
+</span></span></code></pre></div>This pulls and runs a basic Docker container.</li>
+</ol>
+<h2 id="basic-docker-commands">Basic Docker Commands</h2>
+<ul>
+<li>List running containers:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker ps
+</span></span></code></pre></div></li>
+<li>List all containers (including stopped ones):
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker ps -a
+</span></span></code></pre></div></li>
+<li>Stop a container:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker stop &lt;container_id&gt;
+</span></span></code></pre></div></li>
+<li>Remove a container:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker rm &lt;container_id&gt;
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="creating-a-simple-docker-container">Creating a Simple Docker Container</h2>
+<p>Let&rsquo;s create a simple <strong>Docker container</strong> running an Nginx web server.</p>]]></description>
+</item>
+</channel>
+</rss>
